@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import Navbar from "@/components/Navbar"
-import PortfolioChart from "@/components/PortfolioChart"
 import { ArrowRight, TrendingUp, Shield, Zap, DollarSign } from "lucide-react"
 
 export default function HomePage() {
@@ -60,23 +59,12 @@ export default function HomePage() {
                 <ArrowRight size={20} />
               </Link>
               <Link
-                href="/dashboard"
+                href="/profile"
                 className="px-8 py-4 border border-blue-500/50 hover:border-blue-500 rounded-xl transition-all text-lg font-semibold hover:bg-blue-500/10"
               >
-                View Dashboard
+                View Profile
               </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Portfolio Chart Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div
-            className={`transition-all duration-1000 delay-300 ${isVisible ? "animate-slide-up" : "opacity-0 translate-y-10"}`}
-          >
-            <PortfolioChart />
           </div>
         </div>
       </section>

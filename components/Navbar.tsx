@@ -33,8 +33,8 @@ export default function Navbar() {
             <Link href="/invest" className="text-gray-300 hover:text-white transition-colors">
               Invest
             </Link>
-            <Link href="/dashboard" className="text-gray-300 hover:text-white transition-colors">
-              Dashboard
+            <Link href="/profile" className="text-gray-300 hover:text-white transition-colors">
+              Profile
             </Link>
           </div>
 
@@ -76,8 +76,8 @@ export default function Navbar() {
             <Link href="/invest" className="block text-gray-300 hover:text-white transition-colors">
               Invest
             </Link>
-            <Link href="/dashboard" className="block text-gray-300 hover:text-white transition-colors">
-              Dashboard
+            <Link href="/profile" className="block text-gray-300 hover:text-white transition-colors">
+              Profile
             </Link>
             <div className="pt-4 border-t border-gray-700">
               {isConnected ? (

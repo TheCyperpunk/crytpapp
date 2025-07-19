@@ -1,10 +1,9 @@
 // SIP Validation and Calculation Utilities
 
 export const FREQUENCY_OPTIONS = [
-  { value: "daily", label: "Daily", days: 1 },
   { value: "weekly", label: "Weekly", days: 7 },
   { value: "monthly", label: "Monthly", days: 30 },
-  { value: "custom", label: "Custom", days: null },
+  { value: "yearly", label: "Yearly", days: 365 },
 ]
 
 export const MATURITY_TERMS = {
@@ -12,7 +11,7 @@ export const MATURITY_TERMS = {
   max: 60, // months
 }
 
-export const MIN_TOTAL_INVESTMENT = 100 // USDT
+export const MIN_TOTAL_INVESTMENT = 1 // USDT
 
 export function validateSIPPlan(planData) {
   const errors = []
