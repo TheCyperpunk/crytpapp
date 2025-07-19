@@ -3,13 +3,7 @@ import defaultConfig from "shadcn/ui/tailwind.config"
 
 const config: Config = {
   ...defaultConfig,
-  content: [
-    ...defaultConfig.content,
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: [...defaultConfig.content, "./pages/**/*.{js,ts,jsx,tsx,mdx}", "*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     ...defaultConfig.theme,
     extend: {
@@ -18,7 +12,7 @@ const config: Config = {
         ...defaultConfig.theme.extend.colors,
         background: "#0e1324",
         foreground: "#ffffff",
-        border: "rgba(59, 130, 246, 0.2)",
+        border: "rgba(59,130,246,0.2)",
       },
       animation: {
         "fade-in": "fadeIn 0.6s ease-out",
@@ -30,20 +24,9 @@ const config: Config = {
           "100%": { opacity: "1" },
         },
         slideUp: {
-          "0%": {
-            opacity: "0",
-            transform: "translateY(30px)",
-          },
-          "100%": {
-            opacity: "1",
-            transform: "translateY(0)",
-          },
+          "0%": { opacity: "0", transform: "translateY(30px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
       },
     },
   },
